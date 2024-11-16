@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dev. Douglas Lelis</title>
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+        <!-- AOS CSS for animations -->
+        <link href="css/aos.css" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        
+        <meta name="author" content="Douglas Lelis, desenvolvedor FullStack">
+        <meta name="description" content="Douglas Lelis, desenvolvedor Web e Mobile. Transformando Ideias em Soluções Digitais.">
+        <meta name="keywords" content="Desenvolvedor, Programador, Portfólio, Python, Php, MySQL, Curriculum, Currículo, Angular">
+        
+        <meta property="og:title" content="Dev. Douglas Lelis">
+        <meta property="og:description" content="Desenvolvedor Web e Mobile. Transformando Ideias em Soluções Digitais.">
+        <meta property="og:image" content="https://douglaslelis.com.br/ogimg.jpg">
+        <meta property="og:url" content="https://douglaslelis.com.br">
+        <meta property="og:type" content="website">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+
+        <!-- Botão de "Back to Top" -->
+        <button class="floating-btn floating-btn-back-to-top" id="backToTopBtn">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+
+        <!-- Botão de "Actions" -->
+        <div class="floating-btn floating-btn-actions" id="actionsBtn">
+            <i class="bi bi-three-dots-vertical"></i>
+
+            <!-- Ícones de ações dentro do botão "Actions" -->
+            <div class="floating-actions-container" id="actionsContainer">
+                <a href="https://wa.me/5512997856012" target="_blank" class="btn btn-success">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/douglas-lelis-martins-tineu/" target="_blank" class="btn btn-primary">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/douglas.lelis/" target="_blank" class="btn btn-danger">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue fixed-top shadow-sm custom-navbar">
+            <div class="container d-flex align-items-center">
+                <a href="#" class="d-flex align-items-center text-decoration-none">
+                    <img src="favicon.png" height="40" alt="Avatar de Dev. Douglas Lelis" class="me-2 logo">
+                    <span class="navbar-brand mb-0">Dev. Douglas Lelis</span>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mt-3 mt-md-0">
+                        <li class="nav-item"><a class="nav-link nav-item-hover" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link nav-item-hover" href="#projetos">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link nav-item-hover" href="#informacoes">Informações Profissionais</a></li>
+                        <li class="nav-item"><a class="nav-link nav-item-hover" href="#formacao">Cursos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section text-center" style="color: #fff; position: relative;">
+            <div class="hero-bg" style="background-image: url('parallax.jpg');"></div>
+            <div class="hero-overlay"></div>
+        
+            <div class="container pt-3 pt-md-5" data-aos="fade-up" style="position: relative; z-index: 2;">
+                <h1 class="hero-title">Transformando Ideias <br class="d-none d-md-block"> em Soluções Digitais</h1>
+                <h2 class="hero-subtitle">Desenvolvedor Web e Mobile</h2>
+                <p class="hero-description">Sites, sistemas e aplicativos projetados para <br> elevar a experiência do usuário e impulsionar resultados.</p>
+                <a href="#projetos" class="btn btn-outline-light btn-lg btn-blink mt-4">Veja meus projetos</a>
+            </div>
+        </section>
+
+        <!-- Sobre Section -->
+        <section id="sobre" class="section bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5" data-aos="fade-right">
+                        <h2 class="text-center mb-5 d-md-none">Sobre Mim</h2>
+                        <!-- Editor style container -->
+                        <div class="editor-container" style="max-width: 600px; margin: 0 auto; background: #1e1e1e; border-radius: 8px;">
+                            <!-- Editor header imitation -->
+                            <div style="background: #333; padding: 0.5rem; display: flex; align-items: center;">
+                                <span style="background: #ff5f56; border-radius: 50%; width: 12px; height: 12px; margin-right: 5px;"></span>
+                                <span style="background: #ffbd2e; border-radius: 50%; width: 12px; height: 12px; margin-right: 5px;"></span>
+                                <span style="background: #27c93f; border-radius: 50%; width: 12px; height: 12px;"></span>
+                                <span style="color: #9da5b4; font-size: 0.9rem; margin-left: 10px;">desenvolvedor.py - Visual Studio Code</span>
+                            </div>
+                            
+                            <!-- Code container -->
+                            <div id="code" style="padding: 1rem; font-family: 'Courier New', monospace; color: #d4d4d4; font-size: 1rem; line-height: 1.5;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7" data-aos="fade-left">
+                        <div class="ps-3 ps-md-5 pe-3 pt-5 pt-md-0">
+                            <h2 class="text-center mb-5 d-none d-md-block">Sobre Mim</h2>
+                            <p style="line-height: 30px;">Profissional com experiência em desenvolvimento fullstack, atuando como desenvolvedor desde 2017. Experiência em todas as etapas de criação de sites, sistemas web, e-commerces e aplicativos mobile.</p>
+                            <p style="line-height: 30px;">Possuo conhecimento em integração e desenvolvimento de APIs REST e WebServices, além de configuração e manutenção de servidores e infraestrutura em nuvem (AWS, Azure, Google Cloud).</p>
+                            <p style="line-height: 30px;">Com habilidades em gerenciamento de projetos e metodologias ágeis (SCRUM), tenho experiência na organização e condução de equipes, garantindo o cumprimento de prazos e o alinhamento entre as partes envolvidas.</p>
+                            <p style="line-height: 30px;">Minha abordagem é voltada para soluções escaláveis e seguras, com foco na otimização de performance e na entrega de valor. Estou sempre em busca de novos desafios e aprimoramento contínuo para agregar valor aos projetos em que participo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos Section -->
+        <section id="projetos" class="section bg-dark py-5">
+            <div class="container-fluid">
+                <p class="text-center text-light">ALGUNS DOS</p>
+                <h2 class="text-center text-light mb-5">PROJETOS REALIZADOS</h2>
+                <div id="carouselProjetos" class="carousel slide">
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-row align-items-center bg-success text-light p-5">
+                                <div class="col-6 p-3 order-last order-md-first">
+                                    <h3 class="project-title" data-aos="fade-right">Jornal O Independente (2017)</h3>
+                                    <p class="project-description" data-aos="fade-right" data-aos-delay="100">
+                                        Portal de notícias <br>
+                                        Tecnologias: Bootstrap 3, HTML5, CSS3, JavaScript, PHP 7.4, MySQL.
+                                    </p>
+                                </div>
+                                <div class="col-6 order-first order-md-last" data-aos="fade-left">
+                                    <img src="img/mockups/jornal.png" alt="Imagem do Jornal O Independente" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row align-items-center bg-primary text-light p-5">
+                                <div class="col-6 p-3 order-last order-md-first">
+                                    <h3 class="project-title" data-aos="fade-right">Loja Virtual (2018)</h3>
+                                    <p class="project-description" data-aos="fade-right" data-aos-delay="100">
+                                        Sistema Whitelabel para E-commerce. <br>
+                                        Tecnologias: Bootstrap 4, HTML5, CSS3, JavaScript, PHP 7.4, MySQL. <br>
+                                        Integração com PagSeguro e MercadoPago.
+                                    </p>
+                                </div>
+                                <div class="col-6 order-first order-md-last" data-aos="fade-left">
+                                    <img src="img/mockups/loja.png" alt="Imagem da Loja Virtual" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row align-items-center bg-warning text-light p-5">
+                                <div class="col-6 p-3 order-last order-md-first">
+                                    <h3 class="project-title" data-aos="fade-right">Stella Braga Turismo (2019)</h3>
+                                    <p class="project-description" data-aos="fade-right" data-aos-delay="100">
+                                        Site Institucional. <br>
+                                        Tecnologias: Bootstrap 4, HTML5, CSS3, JavaScript, PHP 7.4, MySQL.
+                                    </p>
+                                </div>
+                                <div class="col-6 order-first order-md-last" data-aos="fade-left">
+                                    <img src="img/mockups/stella.png" alt="Imagem do Stella Braga Turismo" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row align-items-center bg-danger text-light p-5">
+                                <div class="col-6 p-3 order-last order-md-first">
+                                    <h3 class="project-title" data-aos="fade-right">Falexpress (2020)</h3>
+                                    <p class="project-description" data-aos="fade-right" data-aos-delay="100">
+                                        Guia Empresarial. <br>
+                                        Tecnologias: Bootstrap 3, HTML5, CSS3, JavaScript, PHP 7.4, MySQL.
+                                    </p>
+                                </div>
+                                <div class="col-6 order-first order-md-last" data-aos="fade-left">
+                                    <img src="img/mockups/falexpress.png" alt="Imagem do Falexpress" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row align-items-center bg-success text-light p-5">
+                                <div class="col-6 p-3 order-last order-md-first">
+                                    <h3 class="project-title" data-aos="fade-right">Imoov (2022)</h3>
+                                    <p class="project-description" data-aos="fade-right" data-aos-delay="100">
+                                        Aplicação para gerenciamento de elevadores. <br>
+                                        Tecnologias: Ionic (Angular 12), Capacitor, Cordova, Bootstrap 4, HTML5, CSS3, JavaScript, PHP 7.4, MySQL.
+                                    </p>
+                                </div>
+                                <div class="col-6 order-first order-md-last" data-aos="fade-left">
+                                    <img src="img/mockups/imoov.png" alt="Imagem do Imoov" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row align-items-center bg-warning text-light p-5">
+                                <div class="col-6 p-3 order-last order-md-first">
+                                    <h3 class="project-title" data-aos="fade-right">Credluz (2022)</h3>
+                                    <p class="project-description" data-aos="fade-right" data-aos-delay="100">
+                                        Função: Gerente de Projeto para nova versão do App.
+                                    </p>
+                                </div>
+                                <div class="col-6 order-first order-md-last" data-aos="fade-left">
+                                    <img src="img/mockups/credluz.png" alt="Imagem do Credluz" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row align-items-center bg-primary text-light p-5">
+                                <div class="col-6 p-3 order-last order-md-first">
+                                    <h3 class="project-title" data-aos="fade-right">MedicalBook (2023)</h3>
+                                    <p class="project-description" data-aos="fade-right" data-aos-delay="100">
+                                        Guia para médicos e profissionais de saúde. <br>
+                                        Tecnologias: Flutter 3 (InAppWebView, InAppPurchase), CodeIgniter 4, PostgreSQL.
+                                    </p>
+                                </div>
+                                <div class="col-6 order-first order-md-last" data-aos="fade-left">
+                                    <img src="img/mockups/medicalbook.png" alt="Imagem do MedicalBook" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row align-items-center bg-primary text-light p-5">
+                                <div class="col-6 p-3 order-last order-md-first">
+                                    <h3 class="project-title" data-aos="fade-right">Center Fitness (2024)</h3>
+                                    <p class="project-description" data-aos="fade-right" data-aos-delay="100">
+                                        Sistema WEB de gerenciamento para academias. <br>
+                                        Tecnologias: Bootstrap 4, HTML5, CSS3, JavaScript, PHP 8, MySQL.
+                                    </p>
+                                </div>
+                                <div class="col-6 order-first order-md-last" data-aos="fade-left">
+                                    <img src="img/mockups/centerfitness.png" alt="Imagem do Center Fitness" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row align-items-center bg-success text-light p-5">
+                                <div class="col-6 p-3 order-last order-md-first">
+                                    <h3 class="project-title" data-aos="fade-right">GrabTakker (2024)</h3>
+                                    <p class="project-description" data-aos="fade-right" data-aos-delay="100">
+                                        Bot para Telegram com automação de tomada de decisão. <br>
+                                        Tecnologias: Python 3 (Flask, Guicorn, Telegram Bot, Stripe API).
+                                    </p>
+                                </div>
+                                <div class="col-6 order-first order-md-last" data-aos="fade-left">
+                                    <img src="img//mockups/telegram.png" alt="Imagem do GrabTakker" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="carousel-indicators">
+                        <div class="thumb active" data-bs-target="#carouselProjetos" data-bs-slide-to="0" >
+                            <div class="overlay"></div>
+                            <img src="img/jornal_logo.png" height="50" width="100" alt="Thumb de Jornal O Independente"/>
+                        </div>
+                        <div class="thumb" data-bs-target="#carouselProjetos" data-bs-slide-to="1">
+                            <div class="overlay"></div>
+                            <img src="img/loja.jpg" height="50" alt="Thumb de Loja Virtual">
+                        </div>
+                        <div class="thumb" data-bs-target="#carouselProjetos" data-bs-slide-to="2">
+                            <div class="overlay"></div>
+                            <img src="img/stella.jpg" height="50" width="100" alt="Thumb de Stella Braga Turismo">
+                        </div>
+                        <div class="thumb" data-bs-target="#carouselProjetos" data-bs-slide-to="3">
+                            <div class="overlay"></div>
+                            <img src="img/falexpress.jpg" height="50" width="100" alt="Thumb de Falexpress">
+                        </div>
+                        <div class="thumb" data-bs-target="#carouselProjetos" data-bs-slide-to="4">
+                            <div class="overlay"></div>
+                            <img src="img/imoov.jpg" height="50" style="width: 100% !important; object-fit: cover !important;" alt="Thumb de Imoov">
+                        </div>
+                        <div class="thumb" data-bs-target="#carouselProjetos" data-bs-slide-to="5">
+                            <div class="overlay"></div>
+                            <img src="img/credluz.jpg" height="50" width="100" alt="Thumb de Credluz">
+                        </div>
+                        <div class="thumb" data-bs-target="#carouselProjetos" data-bs-slide-to="6">
+                            <div class="overlay"></div>
+                            <img src="img/medicalbook.jpg" height="50" width="100" alt="Thumb de MedicalBook">
+                        </div>
+                        <div class="thumb" data-bs-target="#carouselProjetos" data-bs-slide-to="7">
+                            <div class="overlay"></div>
+                            <img src="img/centerfitness.jpg" height="50" width="100" alt="Thumb de centerfitness">
+                        </div>
+                        <div class="thumb" data-bs-target="#carouselProjetos" data-bs-slide-to="8">
+                            <div class="overlay"></div>
+                            <img src="img/grabtakker.jpg" height="50" style="width: 100% !important; object-fit: cover !important;" alt="Thumb de GrabTakker">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informações Profissionais Section -->
+        <section id="informacoes" class="section bg-dark text-light py-5">
+            <div class="container" data-aos="fade-up">
+                <h2 class="text-center mb-5">INFORMAÇÕES PROFISSIONAIS</h2>
+                
+                <div class="row justify-content-center">
+                    <!-- Desenvolvimento Web -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card card-custom shadow-sm h-100" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="card-body text-center">
+                                <i class="bi bi-laptop display-4"></i>
+                                <h3 class="card-title mt-3">Desenvolvimento Web</h3>
+                                <p class="card-text">Sites responsivos, sistemas, WebApp, ChatBot, E-commerce.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Desenvolvimento Mobile -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card card-custom shadow-sm h-100" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card-body text-center">
+                                <i class="bi bi-phone display-4"></i>
+                                <h3 class="card-title mt-3">Desenvolvimento Mobile</h3>
+                                <p class="card-text">Aplicativos para Android e iOS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Integrações -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card card-custom shadow-sm h-100" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card-body text-center">
+                                <i class="bi bi-link display-4"></i>
+                                <h3 class="card-title mt-3">Integrações</h3>
+                                <p class="card-text">API Rest, Web Services, Gateways de Pagamento.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Infraestruturas -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card card-custom shadow-sm h-100" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="card-body text-center">
+                                <i class="bi bi-cloud display-4"></i>
+                                <h3 class="card-title mt-3">Infraestruturas</h3>
+                                <p class="card-text">AWS EC2, RDS, Oracle, Azure, VPS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gerenciamento -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card card-custom shadow-sm h-100" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="card-body text-center">
+                                <i class="bi bi-kanban display-4"></i>
+                                <h3 class="card-title mt-3">Gerenciamento</h3>
+                                <p class="card-text">Git, Github, Jira (Scrum e Kanban), Trello, Asana.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Outras Ferramentas -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card card-custom shadow-sm h-100" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="card-body text-center">
+                                <i class="bi bi-tools display-4"></i>
+                                <h3 class="card-title mt-3">Outras Ferramentas</h3>
+                                <p class="card-text">Nginx, Apache, FTP Server, Firewall, OpenLiteSpeed, WordPress, SSL.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Formação Section -->
+        <section id="formacao" class="section bg-light">
+            <div class="container" data-aos="fade-down">
+                <h2 class="text-center mb-4">CURSOS</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card card-course text-center shadow-sm mb-3">
+                            <div class="card-body">
+                                <img src="img/fatec.png" alt="Flutter Logo" style="height: 50px; margin-bottom: 15px; padding: 5px;">
+                                <h3 class="card-title">Fatec - Taubaté/SP</h3>
+                                <p class="card-text">Conclusão Prevista: jun/2027</p>
+                                <p><b>Em curso</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-course text-center shadow-sm mb-3">
+                            <div class="card-body">
+                                <img src="img/html5-css3.png" alt="HTML5 e CSS3 Logo" style="height: 50px; margin-bottom: 15px;">
+                                <h3 class="card-title">HTML5 e CSS3</h3>
+                                <p class="card-text">SENAC, Taubaté (2017)</p>
+                                <p><b>Concluído</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-course text-center shadow-sm mb-3">
+                            <div class="card-body">
+                                <img src="img/angular.png" alt="Angular Logo" style="height: 50px; margin-bottom: 15px;">
+                                <h3 class="card-title">Angular</h3>
+                                <p class="card-text">Udemy - dez/2020</p>
+                                <p><b>Concluído</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-course text-center shadow-sm mb-3">
+                            <div class="card-body">
+                                <img src="img/flutter.png" alt="Flutter Logo" style="height: 50px; margin-bottom: 15px;">
+                                <h3 class="card-title">Flutter 3</h3>
+                                <p class="card-text">Udemy - mai/2020</p>
+                                <p><b>Concluído</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center my-5">
+                    <a href="Curriculum%20-%20Douglas%20Lelis%20M.%20Tineu.pdf" target="_blank" class="btn btn-custom btn-blink">BAIXAR CV <i class="bi bi-download"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center bg-dark-blue p-4">
+            <p>&copy; 2024 Dev. Douglas Lelis - Todos os Direitos Reservados</p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+            });
+        </script>
+        <!-- TypeIt.js script for typing effect -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
