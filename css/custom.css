@@ -261,6 +261,9 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    .rounded-circle{
+        padding: 0.33rem;
+    }
     .hero-title {
         font-size: 3rem;
     }
@@ -378,6 +381,13 @@ html {
     transition: background-color 0.3s ease;
 }
 
+.rounded-circle{
+    height: 37px;
+    width: 37px;
+    align-content: center;
+    font-size: 1.1rem;
+    padding: 0.35rem;
+}
 .floating-btn-back-to-top {
     background-color: #007bff;
     color: white;
